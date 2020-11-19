@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+
+
+<body>
+    
+    <script src="script.js"></script>    
+     
+</div> 
+    <table border="1">
+        <tr >
+            <td colspan="2"><input type="text" id="initial-value" /></td>
+            <td><input type="text" id="final-value" /></td>
+        </tr>
+        
+        <tr>
+             <td>
+              <input type="button" onclick="fromFunction()" value="From" class="dropbtn" id="frombtn">
+              <div id="fromDropdown" class="dropdown-content">
+                <p onclick="selectfrom('USD')">U.S. Dollar</p>
+                <p onclick="selectfrom('EURO')">Euro</p>
+                <p onclick="selectfrom('YEN')">Japanese Yen</p>
+                <p onclick="selectfrom('Pound')">Great British Pound</p>
+                <p onclick="selectfrom('CA Dollar')">Canadian Dollar</p>
+                <p onclick="selectfrom('Franc')">Swiss Franc</p>
+                <p onclick="selectfrom('INR')">Indian Rupee</p>
+              </div>
+            </td>
+            
+            <td>
+              <input type="button" onclick="toFunction()" value="To" class="dropbtn" id="tobtn">
+              <div id="toDropdown" class="dropdown-content">
+                <p onclick="selectto('USD')">U.S. Dollar</p>
+                <p onclick="selectto('EURO')">Euro</p>
+                <p onclick="selectto('YEN')">Japanese Yen</p>
+                <p onclick="selectto('Pound')">Great British Pound</p>
+                <p onclick="selectto('CA Dollar')">Canadian Dollar</p>
+                <p onclick="selectto('Franc')">Swiss Franc</p>
+                <p onclick="selectto('INR')">Indian Rupee</p>
+              </div>
+            </td>
+            
+            <td>
+              <input type="button" onclick="convert()" value="Convert" class="dropbtn">
+            </td>
+        </tr>
+        
+    </table>
+</html>
